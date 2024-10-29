@@ -1,0 +1,431 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+	font-family: 'Arial', sans-serif;
+}
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+header{
+	width: 100%;
+	height: 90vh;
+	min-height: 600px;
+	padding: 40px 2%;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../imagens/capa.png);
+	background-color: #282c34;
+}
+
+header nav{
+	float: right;
+}
+
+nav.mobile-menu{
+	cursor: pointer;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-image: url('../imagens/menu.png');
+	background-size: 100% 100%;
+}
+
+nav.mobile-menu ul{
+	display: none;
+	background-color: #f8f9fa;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 80px;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav.mobile-menu li{
+	padding: 8px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+nav.mobile-menu ul li:hover{
+	background-color: #e2e6ea;
+}
+
+nav.mobile-menu li a{
+	color: #343a40;
+	text-decoration: none;
+}
+
+.menu-btn {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.menu-icon::before {
+    top: -10px;
+}
+
+.menu-icon::after {
+    top: 10px;
+}
+
+.menu-btn.active .menu-icon {
+    background-color: transparent;
+}
+
+.menu-btn.active .menu-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.menu-btn.active .menu-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+ 
+.offcanvas-body {
+    padding: 2rem;
+    background-color: #f8f9fa;
+}
+
+.offcanvas .nav-link {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #2d298a;
+    font-weight: 600;
+}
+
+.offcanvas .nav-link:hover {
+    color: #282c34;
+}
+
+
+header .logo{
+	margin: 20px 40px;
+	border-radius: 50%;
+	float: left;
+	width:250px;
+	height: 250px;
+	background-image: url('../imagens/prog.webp');
+	border: 5px solid #ffffff;
+	background-size: cover;
+}
+
+.nav{
+	margin-top: -110px;
+}
+
+header nav.desktop-menu ul{
+	list-style-type: none;
+}
+
+header nav.desktop-menu li{
+	float: left;
+	top: -60px;
+	padding: 0 20px;
+}
+
+header nav.desktop-menu li a{
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.chamada1{
+	max-width: 600px;
+	float: right;
+	margin: -70px 110px;
+}
+
+.chamada1 h2{
+	font-weight: 300;
+	font-size: 40px;
+	color:  #ffffff;
+	margin: -60px 110px;
+}
+
+.chamada1 p{
+	font-size: 15px;
+	color: #ffffff;
+	margin-top: 90px;
+}
+
+section.sessao1{
+	width: 100%;
+	
+	padding: 0 2%;
+	height: 400px;
+}
+
+section.sessao1 .container{
+	max-width: 1000px;
+}
+
+.texto-sessao1{
+	float: left;
+	width: 50%;
+	position: relative;
+	margin-top: 40px;
+	padding-left: 85px;
+	color: #ffffff;
+}
+
+.texto-sessao1 h2{
+	font-size: 35px;
+	font-weight: 400;
+}
+
+.texto-sessao1 p{
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+.texto-sessao1 ul{
+	font-size: 20px;
+	list-style-type: disc;
+	padding-left: 15px;
+}
+
+.texto-sessao1 ul li{
+	margin-top: 25px;
+}
+
+.btn1-texto1{
+	background-color: #2d298a;
+	width: 165px;
+	height: 44px;
+	font-size: 17px;
+	color: #ffffff;
+	cursor: pointer;
+	margin-top: 35px;
+	text-align: center;
+	line-height:30px;
+	border-radius: 30px;
+}
+
+.btn1-texto1:hover {
+    background-color: #2d298a;
+    opacity: 0.8;
+}
+
+button[type="submit"]:hover {
+    background-color: #2d298a;
+    opacity: 0.8;
+}	
+
+.sessao2{
+	margin-top: -90px;
+	padding: 0% 2%;
+	text-align: center;
+	background-color: #f0f0f0;
+}
+
+.sessao2 .container{
+	max-width: 750px;
+}
+
+.sessao2 h2{
+	color: #303e54;
+	font-weight: 400;
+	padding-top: 10px;
+}
+
+.sessao2 p{
+	margin-top: 30px;
+	margin-bottom: 5px;
+	max-width: 900px;
+	color: #303e54;
+}
+
+.sessao2 img{
+	position: relative;
+	top: 70px;
+	width: 100%;
+	margin-top: 30px;
+	padding: 0px 4%;
+	border-radius: 6%;
+}
+
+.sessao3{
+	width: 100%;
+	height: 60%;
+}
+.wraper-part1{
+	max-width: 600px;
+	float: right;
+	padding-right: 15px;
+	padding-left: 90px;
+}
+
+.part1 h2{
+	font-weight: 300;
+	font-style: italic;
+	font-size: 23px;
+}
+
+.part1 p{
+	font-size: 15px;
+	line-height: 35px;
+	margin-top:10px;
+}
+
+.part2{
+	float: left;
+	width: 50%;
+	padding:48px 0 90px 0;
+	background-color: #ff7043;
+}
+
+.scroll{
+	max-width: 600px;
+	padding-left: 20px;
+	overflow: hidden;
+}
+
+.scroll-wraper{
+	width: 100%;
+}
+
+section.sessao4{
+	margin-top: -60px;
+	background-color: #f0f0f0;
+	padding: 100px 0;
+}
+
+.form{
+	float: left;
+	width: 50%;
+	color: white;
+	padding-left: 10px;
+}
+
+.form h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.form p{
+	font-size: 15px;
+	font-weight: 300;
+	max-width: 400px;
+	padding-right: 60px;
+}
+
+.form form{
+	margin-top: 15px;
+}
+
+.form form input[type=text],
+.form form textarea {
+	width: 90%;
+	max-width: 480px;
+	margin-top: 8px;
+	padding: 15px;
+	border: 1px solid #ccc;
+}
+
+.form form input[type=submit]{
+	border: 0;
+	background-color: #ff7043;
+	width: 165px;
+	height: 44px;
+	font-size: 17px;
+	color: white;
+	cursor: pointer;
+	margin-top: 20px;
+	border-radius: 30px;
+}
+
+.mapa{
+	width: 55%;
+	height: 292px;
+	float: right;
+	position: relative;
+}
+
+footer{
+	text-align: center;
+	padding: 40px 0;
+	background-color: #282c34;
+	color: white;
+}
+
+footer p:nth-of-type(1),
+footer p:nth-of-type(2){
+	font-size: 20px;
+	color: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #mobileMenuButton {
+    	display: flex;
+        position: absolute;
+        top: 20px; 
+        right: 35px;
+    }
+
+   
+    .logo {
+        margin: 0 auto;
+    }
+
+    #contato{
+    	margin-top: 15px;
+    }
+
+    .chamada1{
+    	margin-top: 35px !important;
+    }
+
+    .map{
+    	width: 490px!important;
+    	position: relative;
+    	text-align: center;
+    	display: flex;
+    }
+}
+

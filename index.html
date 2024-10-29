@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leuzer</title>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header class="py-4">
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center text-center text-md-start">
+            <div class="logo mb-3 mb-md-0"></div>
+            <nav class="desktop-menu d-none d-md-block">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button id="mobileMenuButton" class="menu-btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" onclick="toggleMenuIcon()">
+                <span class="menu-icon"></span>
+            </button>
+        </div>
+        <div class="chamada1 text-center mt-4">
+            <h2>Sistemas Próprios<br>Para Empresas Autênticas!</h2>
+            <p>Criação de soluções tecnológicas exclusivas para o seu negócio. Entre em contato e conheça nossos serviços.</p>
+        </div>
+    </div>
+</header>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+    </div>
+</div>
+
+<section id="servicos" class="sessao1 py-5">
+    <div class="container text-center">
+        <h2>Desenvolvemos Sistemas Únicos!</h2>
+        <p>Transforme seu negócio com tecnologias inovadoras.</p>
+        <ul class="list-unstyled">
+            <li>Sites</li>
+            <li>Lojas virtuais</li>
+            <li>Sistemas personalizados</li>
+        </ul>
+        <div id="contactButton" class="btn1-texto1 btn btn-primary mt-3">Entre em contato!</div>
+    </div>
+</section>
+
+<section id="sobre" class="sessao2 py-5">
+    <div class="container text-center">
+        <h2>Desenvolvido de pessoas para pessoas</h2>
+        <p>Nosso foco é desenvolver soluções que atendam às necessidades reais dos nossos clientes, com um toque pessoal e humano.</p>
+        <img style="margin-top: -40px;" src="imagens/imgg1.webp" class="img-fluid" alt="Mockup do sistema">
+    </div>
+</section>
+
+<section class="sessao3 py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Nosso time</h2>
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+                <img src="imagens/polly.png" alt="Foto de Polly Nilda" class="rounded-circle me-3" width="100" height="100">
+                <div>
+                    <h3>Polly Nilda</h3>
+                    <p>Founder / Desenvolvedora</p>
+                    <p>Com vasta experiência em desenvolvimento web, Polly é responsável por liderar os projetos com criatividade e precisão.</p>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <img src="imagens/leu.webp" alt="Foto de Leuzer Ícaro" class="rounded-circle me-3" width="100" height="100">
+                <div>
+                    <h3>Leuzer Ícaro</h3>
+                    <p>Co-Founder / Desenvolvedor</p>
+                    <p>Desenvolvedor Front End.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="sessao4 py-5">
+    <div class="container">
+        <h2 class="text-center mt-5 mb-4">Entre em contato</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" name="nome" placeholder="Nome*" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" name="email" placeholder="E-mail*" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" name="mensagem" placeholder="Mensagem*" required></textarea>
+                    </div>
+                    <button style="background-color: #2d298a;" type="submit" class="btn1-texto1 mb-4 btn btn-primary mt-3">Enviar</button>
+                </form>
+            </div>
+            <div class="map col-md-6 text-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6490.065928346886!2d-38.51700841350055!3d-12.974115234149288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1727924653698!5m2!1spt-BR!2sbr" width="480" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+        <p>Brooklyn, 2024.</p>
+        <p>₢ Todos os direitos reservados</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    function toggleMenuIcon() {
+        const menuButton = document.getElementById('mobileMenuButton');
+        
+        if (menuButton) {
+            menuButton.classList.toggle('active');
+        } else {
+            console.error('Elemento #mobileMenuButton não encontrado');
+        }
+    }
+
+    // Função para rolar suavemente até o formulário ao clicar no botão "Entre em contato"
+    const contactButton = document.getElementById('contactButton');
+    if (contactButton) {
+        contactButton.addEventListener('click', function() {
+            const form = document.getElementById('contato');
+            if (form) {
+                form.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            } else {
+                console.error('Elemento #contactForm não encontrado');
+            }
+        });
+    } else {
+        console.error('Elemento #contactButton não encontrado');
+    }
+
+    
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            
+            alert('Mensagem enviada com sucesso!');
+            
+                        contactForm.reset();
+        });
+    } else {
+        console.error('Elemento #contactForm não encontrado');
+    }
+});
+</script>
+
+</body>
+</html>
